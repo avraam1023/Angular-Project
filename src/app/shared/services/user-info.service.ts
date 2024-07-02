@@ -9,6 +9,7 @@ export class UserInfoService {
   private Url = `http://localhost:5000/api/Customer/Info`;
   private http = inject(HttpClient);
 
+  // ტიპიზაცია!
   getUserData(): Observable<any> {
     return this.http.get(this.Url);
   }

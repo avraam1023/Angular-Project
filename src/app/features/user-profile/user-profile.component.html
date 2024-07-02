@@ -46,7 +46,7 @@
   </div>
 
   }
-  <button class="sign-out-button" (click)="signOut.signOut()">Sign Out</button>
+  <button class="sign-out-button" (click)="loginService.signOut()">Sign Out</button>
   @if(isSignOut$ | async) {
   <div class="loading-container">
     <div class="loading-content">

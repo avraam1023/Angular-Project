@@ -1,4 +1,5 @@
-export interface signIn {
+// ტიპის დეკლარაციები ყოველთვის PascalCase-ში!
+export interface SignIn {
   username: string;
   password: string;
   setCookie: boolean;
@@ -18,6 +19,6 @@ interface data {
   validateTill: string;
 }
 
-export interface signInErrors {
+export interface SignInErrors {
   signIn: string;
 }

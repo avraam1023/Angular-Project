@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
 @Injectable({
   providedIn: 'root',
 })
-export class RegisterService {
+export class RegisterService { // AuthService-ში გაგეერთიანებინა ყველა ავტორიზაციის ლოგიკა
   private readonly baseUrl = `http://localhost:5000/api/Customer/Registration`;
   private readonly httpClient = inject(HttpClient);
   private readonly route = inject(Router);
