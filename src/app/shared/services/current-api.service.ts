@@ -11,6 +11,7 @@ export class CurrentApiService {
   constructor(private http: HttpClient) {}
 
   getExchangeRates(base: string): Observable<any> {
+    // ტიპიზაცია უნდა!
     return this.http.get(`${this.apiUrl}?base=${base}`);
   }
 }

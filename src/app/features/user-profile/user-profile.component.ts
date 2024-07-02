@@ -10,12 +10,12 @@ import { AsyncPipe } from '@angular/common';
   styleUrl: './user-profile.component.css',
 })
 export class UserProfileComponent implements OnInit {
-  public signOut = inject(LoginService);
-  isSignOut$ = this.signOut.isSignOut$;
-  user$ = this.signOut.user$;
+  public loginService = inject(LoginService);
+  isSignOut$ = this.loginService.isSignOut$;
+  user$ = this.loginService.user$;
 
   constructor() {
-    this.signOut.init();
+    this.loginService.init();
   }
 
   ngOnInit(): void {}
